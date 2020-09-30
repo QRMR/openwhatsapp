@@ -1,0 +1,10 @@
+{
+  "name": "OpenWhatsApp",
+  "displayName": "OpenWhatsApp",
+  "expo": {
+    "name": "OpenWhatsApp",
+    "slug": "OpenWhatsApp",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["assets/**/*"]
+  }
+}
