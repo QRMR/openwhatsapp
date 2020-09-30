@@ -1,11 +1,11 @@
 import React from "react";
-import { StyleSheet, View, SafeAreaView, ActivityIndicator } from "react-native";
-import { StatusBar } from "expo-status-bar";
+import { StyleSheet, View, SafeAreaView, ActivityIndicator, StatusBar } from "react-native";
+// import { StatusBar } from "expo-status-bar";
 import { WebView } from "react-native-webview";
 
 export default function App() {
   return (
-    <View style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1 }}>
       <StatusBar />
       <View
         style={{
@@ -13,7 +13,6 @@ export default function App() {
           alignSelf: "stretch",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: 20,
         }}>
         <WebView
           containerStyle={{
@@ -26,7 +25,7 @@ export default function App() {
           }
           startInLoadingState={true}
           hideKeyboardAccessoryView={true}
-          key
+          autoManageStatusBarEnabled={false}
           renderLoading={() => (
             <View
               style={{
@@ -40,7 +39,7 @@ export default function App() {
           )}
         />
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 
