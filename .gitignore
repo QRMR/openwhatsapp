@@ -1,3 +1,12 @@
+# OpenWhatsApp custom ignores
+
+# Local / build envvars
+.env*
+*.env*
+
+# Google Firebase creds
+google-services.json
+GoogleService-Info.plist
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,node,reactnative,dotenv,jetbrains+all,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,node,reactnative,dotenv,jetbrains+all,visualstudiocode
