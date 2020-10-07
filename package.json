@@ -6,10 +6,12 @@
     "web": "expo start --web",
     "start": "react-native start",
     "test": "jest",
-    "pods": "cd ios && pod install --repo-update && cd ..",
+    "pods": "yarn install && cd ios && pod install --repo-update --verbose && cd ..",
     "clear": "rm -rf node_modules && yarn install && yarn pods"
   },
   "dependencies": {
+    "@react-native-firebase/app": "^8.4.5",
+    "@react-native-firebase/crashlytics": "^8.4.9",
     "expo": "~39.0.2",
     "expo-splash-screen": "~0.6.2",
     "expo-status-bar": "~1.0.2",
